@@ -2,17 +2,17 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Online English Lessons</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: #f0f8ff;
+      background-color: #f0f8ff;
       margin: 0;
       padding: 0;
       text-align: center;
     }
-    header {
+    header, footer {
       background-color: #007acc;
       color: white;
       padding: 20px;
@@ -31,17 +31,17 @@
       padding: 40px;
     }
     .languages {
-      margin: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
     }
     .lang-box {
       border: 1px solid #ccc;
       border-radius: 8px;
       padding: 20px;
-      margin: 10px;
       background-color: white;
-      display: inline-block;
-      max-width: 300px;
-      vertical-align: top;
+      width: 250px;
     }
     button {
       background-color: #007acc;
@@ -55,13 +55,10 @@
     button:hover {
       background-color: #005f99;
     }
-    footer {
-      background-color: #007acc;
-      color: white;
-      padding: 10px;
-      position: fixed;
+    .hero-image {
       width: 100%;
-      bottom: 0;
+      max-height: 400px;
+      object-fit: cover;
     }
   </style>
 </head>
@@ -71,9 +68,10 @@
     <p>Learn English easily with Samandar!</p>
   </header>
 
+  <img src="https://images.unsplash.com/photo-1584697964194-8e4f95c81c8e?auto=format&fit=crop&w=1400&q=80" alt="Learning English" class="hero-image">
+
   <nav>
     <a href="#home">Home</a>
-    <a href="#lessons">Lessons</a>
     <a href="#about">About Me</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -84,100 +82,26 @@
       <div class="lang-box">
         <h3>English</h3>
         <p>Start learning English from the basics. Fun and easy lessons!</p>
-        <button onclick="location.href='english.html’ ">Start Learning</button>
-<h4>English</h4>
-    <p>Welcome to your first English lesson! Let's start with simple greetings and common phrases.</p>
-Hello!  
-Hi!  
-Good morning  
-Good afternoon  
-Good evening  
-Good night  
-How are you? – I'm fine, thank you.  
-Nice to meet you. – Nice to meet you, too.  
-Please, thank you, you're welcome  
-Goodbye – See you soon!
-    <h4>English</h4>
-    <p>Family members: mother, father, sister, brother, grandmother, grandfather, uncle, aunt, cousin, son,daughter.
-This is my mother
-He is my brother
-I love my family</p>
-
+        <button onclick="location.href='english.html'">Start Learning</button>
       </div>
       <div class="lang-box">
         <h3>Русский</h3>
         <p>Начните изучать английский язык с основ. Уроки простые и интересные!</p>
-        <button onclick="location.href='russian.html’ ">Начать</button>
-<h4>Русский</h4>
-Привет!  
-Здравствуйте!  
-Доброе утро  
-Добрый день  
-Добрый вечер  
-Спокойной ночи  
-Как дела? – Хорошо, спасибо.  
-Приятно познакомиться – Мне тоже приятно  
-Пожалуйста, спасибо, не за что  
-До свидания – Увидимся!
-    <h4>Русский</h4>
-    <p>Члены семьи: мать, отец, сестра, брат, бабушка, дедушка, дядя, тетя, двоюродный брат/сестра, сын, дочью
-Это моя мама
-Он мой брат
-Я любль свою семья</p>
-
+        <button onclick="location.href='russian.html'">Начать</button>
       </div>
       <div class="lang-box">
         <h3>Тоҷикӣ</h3>
         <p>Забони англисиро аз асосҳо ёд гиред. Дарсҳо осон ва шавқоваранд!</p>
-        <button onclick="location.href='tajik.html’ ">Оғоз кардан</button>
-<h4>Тоҷикӣ</h4>
-Салом!  
-Салом алайкум!  
-Субҳ ба хайр  
-Рӯз ба хайр  
-Шаб ба хайр  
-Шаби хуш  
-Шумо чи хел? – Хубам, раҳмат.  
-Шиносоӣ хуш – Ман ҳам шодам  
-Лутфан, раҳмат, хуш омадед  
-Хайр – Ба зудӣ мебинем!
-    <h4>Тоҷикӣ</h4>
-    <p>Аъзои оила: модар, падар, хоҳар, бародар, бибӣ, бобо, амак, хола, ҷиян, писар, духтар.
-Ин модари ман аст
-Ӯ бародари ман аст
-Ман оилаи худро дӯст медорам</p>
-
+        <button onclick="location.href='tajik.html'">Оғоз кардан</button>
       </div>
       <div class="lang-box">
         <h3>Oʻzbekcha</h3>
         <p>Ingliz tilini asoslardan boshlang. Darslar qulay va qiziqarli!</p>
-        <button onclick="location.href='uzbek.html’ ">Boshlash</button>
-<h4>O'zbekcha</h4>
-Salom!
-Assalomu alaykum!
-Xayrli tong
-Xayrli kun
-Xayrli kech
-Xayrli tun
-Qandaysiz? - Yaxshi rahmat
-Tanishganimdan xursandman - Men ham xursandman
-Marhamat, rahmat, xush kelibsiz
-Xayr - ko'rishguncha
-    <h4>Oʻzbekcha</h4>
-    <p>Oila a'zolari: ona, ota, opa, uka, buvi, buva, amaki, xola, jiyan, o'g'il, qiz.
-Bu mening onam
-U mening akam
-Men oilamni yaxshi ko'raman</p>
-
+        <button onclick="location.href='uzbek.html'">Boshlash</button>
       </div>
     </div>
   </div>
 
-  <div class="content" id="lessons">
-    <h2>Lessons</h2>
-    <h3>Lesson 1: Introduction</h3>
-    <h3>Lesson 2: Family</h3>
-  </div>
   <div class="content" id="about">
     <h2>About Me</h2>
     <p>My name is Samandar. I am an English teacher at a Presidential school and a university student in Dangara. I love helping students learn English step-by-step in a fun and simple way.</p>
