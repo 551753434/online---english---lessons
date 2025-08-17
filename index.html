@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -116,8 +116,34 @@
 
   <footer>
     &copy; 2025 Samandar's English Lessons. All rights reserved.
+<footer>
+    &copy; 2025 Samandar's English Lessons. All rights reserved.
+    <div id="stats" style="margin-top:10px; font-size:14px;">
+      ⭐ Stars: <span id="stars">0</span> | 🍴 Forks: <span id="forks">0</span> | 👁️ Views: <span id="views">0</span>
+    </div>
+  </footer>
+
+  <script>
+   
+    const repoUser = "551753434"; 
+    const repoName = "online---english---lessons";
+
+    
+    fetch(https://api.github.com/repos/${repoUser}/${repoName})
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("stars").textContent = data.stargazers_count;
+        document.getElementById("forks").textContent = data.forks_count;
+      });
+
+    
+    fetch("https://api.countapi.xyz/hit/english-lessons/visits")
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("views").textContent = data.value;
+      });
+  </script>
   </footer>
 </body>
 
 </html>
-
